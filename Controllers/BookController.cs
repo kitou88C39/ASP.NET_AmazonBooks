@@ -9,8 +9,11 @@ public class BookController : Controller
 {
     private ApplicationDbContext_db;
 
-    public BookController(ApplicationDbContext)
+    public BookController(ApplicationDbContext db)
     {
         _db = db;
+    }
+    public IActionResult Index(){
+        return View();
     }
 }
