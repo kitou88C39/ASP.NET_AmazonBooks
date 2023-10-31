@@ -9,8 +9,8 @@ public class BookController : Controller
 {
     private ApplicationDbContext_db;
 
-    public BookController(Parameters)
+    public BookController(ApplicationDbContext)
     {
-        
+        _db = db;
     }
 }
