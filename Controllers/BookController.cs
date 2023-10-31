@@ -13,7 +13,9 @@ public class BookController : Controller
     {
         _db = db;
     }
-    public IActionResult Index(){
+    public IActionResult Index()
+    {
+        var books=_db.Books.ToList();
         return View();
     }
 }
