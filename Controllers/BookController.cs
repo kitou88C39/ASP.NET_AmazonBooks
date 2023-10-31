@@ -8,4 +8,9 @@ namespace AmazonBooks.Controllers;
 public class BookController : Controller
 {
     private ApplicationDbContext_db;
+
+    public BookController(Parameters)
+    {
+        
+    }
 }
