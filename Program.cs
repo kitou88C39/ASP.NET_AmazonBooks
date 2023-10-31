@@ -1,4 +1,4 @@
-namespace AmazonBooks.Data;
+using AmazonBooks.Data;
 using AmazonBooks.Models;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
