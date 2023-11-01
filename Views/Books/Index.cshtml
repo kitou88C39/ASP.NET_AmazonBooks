@@ -1,5 +1,14 @@
+@model List<BooksEntity>
+
 @{
     ViewData["Title"] = "Books";
 }
 
 <h2>Books</h2>
+
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <a asp-action="Create" asp-controller="Book" class="btn btn-sucess">Create Book</a>
+    </div>
+</div>
