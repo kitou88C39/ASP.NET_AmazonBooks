@@ -18,4 +18,9 @@ public class BookController : Controller
         var books=_db.Books.ToList();
         return View();
     }
+    public IActionResult Create()
+    {
+        return View();
+    }
+
 }
