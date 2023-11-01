@@ -22,5 +22,13 @@ public class BookController : Controller
     {
         return View();
     }
+    [HttpPost]
+     public IActionResult CreateBoot(BooksEntity book)
+    {
+         _db.books.Add(book);
+         _db.SaveChanges();
+
+         return RedirectToAction("Index");
+    }
 
 }
