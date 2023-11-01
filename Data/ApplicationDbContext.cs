@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 public class ApplicationDbContext:DbCotext
 {
-public ApplicationDbContext(DbContextOptions<Application>options):base(options){
+public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options){
 }
 public DbSet<BooksEntity> Books {get; set;}
 }
