@@ -7,7 +7,7 @@ namespace AmazonBooks.Controllers;
 
 public class BookController : Controller
 {
-    private ApplicationDbContext_db;
+    private ApplicationDbContext_db
 
     public BookController(ApplicationDbContext db)
     {
